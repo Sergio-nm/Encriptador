@@ -78,6 +78,8 @@ function copiarTextoYLimpiar() {
             document.getElementById("miModal").style.display ="block";
             document.getElementById("aviso").textContent ="Aviso";
             document.getElementById("mensaje").textContent ="Se ha copiado el texto correctamente";
+            document.getElementById("txtEncriptar").value = "";
+            document.getElementById("txtCodificado").value = "";
         })
         .catch(err => {
             console.error('Error al copiar texto: ', err);
